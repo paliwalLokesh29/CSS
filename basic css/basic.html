@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css and html file -->
+    <link rel="stylesheet" href="external.css">
+    <style>
+        /* Internal css */
+        h1{
+            color: blue;
+        }
+        p{
+            color: blue ;
+            /* here important is used for follow the rule of internal css */
+        }
+        /* css when use id */
+        #paragraph{
+            background-color: rgb(186, 186, 22);
+        }
+        /* css when use class in html file */
+        .paragraph{
+            color: rgb(55, 7, 101);
+        }
+        /* group selector */
+        article,p{
+            background-color: rgb(33, 215, 215);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- inline css -->
+    <h1 style="background-color: aquamarine;">WElocome to my website </h1>
+
+    <p style="color: brown">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, delectus illum. Dolore enim sunt, nostrum in possimus ullam architecto eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti dolorum modi excepturi, accusantium expedita officia ullam error similique cupiditate neque alias nam, exercitationem officiis facere, repellendus hic ducimus porro asperiores.
+    </p>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, rerum.</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <article>hello gyes </article>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ab dolor laudantium perferendis nihil numquam aspernatur eum nobis, officia et doloremque pariatur incidunt expedita quia. Molestiae assumenda voluptatem recusandae minus.</p>
+</body>
+</html>
