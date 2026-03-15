@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: beige;
+            margin: 2px;
+            padding: 2px;
+             /* Container ko flex container banata hai.
+                   Iske andar ke saare child elements flex items ban jaate hain
+                   aur default me ek row (left to right) me arrange ho jaate hain. */
+            display: flex;
+              /* Flex items ko horizontal line (left → right) me arrange karta hai.
+                         Ye flexbox ka default direction bhi hota hai. */
+            flex-direction: row;
+            /* flex-direction: column-reverse;
+            flex-direction: row-reverse; */ 
+            
+            /* flex-wrap:wrap-reverse; */
+            height: 500px;
+            /* Flex items ko main axis (usually horizontal) par align karta hai.
+                              center karne par saare items container ke beech me aa jate hain. */
+            /* justify-content: center; */
+            align-items: center;
+            align-content: start;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid brown
+            ;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+        background-color: blue;
+        /* flex-shrink: 4; */
+          /* Extra space milne par flex item ko grow (bada) hone deta hai.
+                  Jiska flex-grow zyada hoga, wo zyada space lega. */
+       flex-grow: 1;
+        }
+        #box2{
+      background-color: yellow;
+       flex-grow: 1;
+        }
+        #box3{
+            background-color: red;
+             flex-grow: 1;
+
+        }
+        #box4{
+background-color: orange;
+ flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id ="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 3</div>
+    </div>
+</body>
+</html>
+  <!-- /* Flex items ko cross axis (usually vertical) par align karta hai.
+                         center karne par items container ke beech vertical aa jate hain. */
+    align-content: center;  /* Multiple flex lines ko cross axis me align karta hai. -->
+                           <!-- Ye tab kaam karta hai jab flex-wrap use ho. */   -->
+                            <!-- flex-flow: row wrap;   flex-direction aur flex-wrap ko ek hi property me set karne ke liye use hota hai  -->
+                             <!-- flex-basis: 200px;   Flex item ka initial size set karta hai (width ya height),
+                       flex-grow aur flex-shrink apply hone se pehle.  -->
+                       <!-- flex-shrink: 1;   Container me space kam hone par flex item ko chhota (shrink) hone deta hai  -->
+
+                       <!-- align-self: center;   Ek specific flex item ko cross axis (vertical) me align karta hai.
+                        Ye align-items ko override karta hai.  -->
