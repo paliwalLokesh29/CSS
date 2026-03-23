@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: bisque;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .item{
+            height: 250px;
+            width: 250px;
+            background-color: black;
+            border: 2px solid blue;
+        }
+        #rotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #rotatey:hover{
+          transform: rotateY(45deg);
+        }
+        #rotatez:hover{
+            transform: rotateZ(45deg);
+        }
+        #rotatea:hover{
+              transform: translateX(-100px);
+        }
+        #rotateb:hover{
+            transform: translateY(100px);
+        }
+        #rotatec:hover{
+          transform:perspective(300px) translateZ(100px);
+        }
+        #rotated:hover{
+            transform: scaleX(1.5);
+        }
+        #rotatee:hover{
+            transform: scaleY(1.5);
+        }
+        #rotatef:hover{
+            transform:perspective(300px) scaleZ(5) rotateY(30deg);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item " id="rotateX">RotateX</div>
+        <div class="item"id="rotatey">RotateY</div>
+        <div class="item"id="rotatez">Rotatez</div>
+        <div class="item"id="rotatea">TranslateX</div>
+        <div class="item"id="rotateb">TranslateY</div>
+        <div class="item"id="rotatec">Translatez</div>
+        <div class="item"id="rotated">scaleX</div>
+        <div class="item"id="rotatee">scaleY</div>
+        <div class="item"id="rotatef">scaleZ</div>
+    </div>
+</body>
+</html>
